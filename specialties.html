@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spezialitäten - Suriya Kanthi</title>
+    <meta name="description" content="Entdecken Sie unsere authentischen Sri Lankan Spezialitäten - traditionelle Gerichte mit besonderen Zutaten und jahrhundertealten Rezepten.">
+    <meta name="keywords" content="Sri Lankan Spezialitäten, Kottu Roti, Hoppers, authentische Küche, Berlin">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MCA1MCI+PGNpcmNsZSBjeD0iMjUiIGN5PSIyNSIgcj0iMjMiIGZpbGw9IiM4QjQ1MTMiLz48dGV4dCB4PSIyNSIgeT0iMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgZmlsbD0iI0ZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U0s8L3RleHQ+PC9zdmc+">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Config -->
+    <script src="config.js"></script>
+</head>
+<body>
+    <!-- Language Toggle -->
+    <div class="language-toggle">
+        <button id="langToggle" class="lang-btn">
+            <i class="fas fa-globe"></i>
+            <span id="currentLang">DE</span>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><a href="index.html" style="color: inherit; text-decoration: none;">Suriya Kanthi</a></h2>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Startseite</a>
+                <a href="index.html#menu" class="nav-link">Speisekarte</a>
+                <a href="index.html#offers" class="nav-link">Angebote</a>
+                <a href="index.html#about" class="nav-link">Über uns</a>
+                <a href="specialties.html" class="nav-link active">Spezialitäten</a>
+                <a href="index.html#contact" class="nav-link">Kontakt</a>
+                <a href="index.html#reservation" class="nav-link cta-button">Reservierung</a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="specialties-hero">
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="specialtiesHeroTitle">Unsere Spezialitäten</h1>
+                    <p id="specialtiesHeroSubtitle">Entdecken Sie die authentischen Geschmäcker Sri Lankas mit unseren traditionellen Spezialitäten, die nach jahrhundertealten Familienrezepten zubereitet werden.</p>
+                    <a href="index.html#menu" class="btn btn-primary" id="viewFullMenuBtn">Zur Speisekarte</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialties Grid -->
+    <section class="specialties-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" id="ourSpecialtiesTitle">Unsere Signature Gerichte</h2>
+                <p class="section-subtitle" id="ourSpecialtiesSubtitle">Jedes Gericht erzählt eine Geschichte der sri-lankischen Tradition</p>
+            </div>
+
+            <div class="specialties-grid" id="specialtiesGrid">
+                <!-- Dynamic content loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Cooking Process Section -->
+    <section class="cooking-process">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" id="cookingProcessTitle">Unser Kochprozess</h2>
+                <p class="section-subtitle" id="cookingProcessSubtitle">Traditionelle Methoden mit frischen, hochwertigen Zutaten</p>
+            </div>
+
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3 id="step1Title">Frische Zutaten</h3>
+                    <p id="step1Description">Wir verwenden nur die frischesten Gewürze und Zutaten, viele davon direkt aus Sri Lanka importiert.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-mortar-pestle"></i>
+                    </div>
+                    <h3 id="step2Title">Traditionelle Zubereitung</h3>
+                    <p id="step2Description">Unsere Gewürzmischungen werden täglich frisch gemahlen und nach traditionellen Methoden zubereitet.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3 id="step3Title">Langsames Kochen</h3>
+                    <p id="step3Description">Viele unserer Gerichte werden stundenlang bei niedriger Hitze gekocht, um die perfekte Geschmacksharmonie zu erreichen.</p>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 id="step4Title">Mit Liebe serviert</h3>
+                    <p id="step4Description">Jedes Gericht wird mit Stolz und Leidenschaft für die sri-lankische Küche zubereitet und serviert.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spice Knowledge Section -->
+    <section class="spice-knowledge">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" id="spiceKnowledgeTitle">Gewürz-Wissen</h2>
+                <p class="section-subtitle" id="spiceKnowledgeSubtitle">Die Geheimnisse der sri-lankischen Gewürzküche</p>
+            </div>
+
+            <div class="spice-grid">
+                <div class="spice-card">
+                    <div class="spice-image">
+                        <img src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=300&h=200&fit=crop" alt="Cinnamon" loading="lazy">
+                    </div>
+                    <div class="spice-content">
+                        <h3 id="cinnamonTitle">Ceylon Zimt</h3>
+                        <p id="cinnamonDescription">Der echte Zimt aus Sri Lanka ist süßer und milder als Cassia-Zimt und verleiht unseren Desserts und Currys eine besondere Note.</p>
+                    </div>
+                </div>
+
+                <div class="spice-card">
+                    <div class="spice-image">
+                        <img src="https://images.unsplash.com/photo-1599638955726-de7b2c078211?w=300&h=200&fit=crop" alt="Cardamom" loading="lazy">
+                    </div>
+                    <div class="spice-content">
+                        <h3 id="cardamomTitle">Kardamom</h3>
+                        <p id="cardamomDescription">Das "Königin der Gewürze" verleiht unseren Gerichten ein intensives, leicht süßliches Aroma mit zitrusartigen Noten.</p>
+                    </div>
+                </div>
+
+                <div class="spice-card">
+                    <div class="spice-image">
+                        <img src="https://images.unsplash.com/photo-1506368083636-6defb67639a7?w=300&h=200&fit=crop" alt="Curry Leaves" loading="lazy">
+                    </div>
+                    <div class="spice-content">
+                        <h3 id="curryLeavesTitle">Curry Blätter</h3>
+                        <p id="curryLeavesDescription">Frische Curry-Blätter sind unverzichtbar für authentische sri-lankische Gerichte und geben einen unverwechselbaren Geschmack.</p>
+                    </div>
+                </div>
+
+                <div class="spice-card">
+                    <div class="spice-image">
+                        <img src="https://images.unsplash.com/photo-1599449294672-6b7b4bfb7005?w=300&h=200&fit=crop" alt="Turmeric" loading="lazy">
+                    </div>
+                    <div class="spice-content">
+                        <h3 id="turmericTitle">Kurkuma</h3>
+                        <p id="turmericDescription">Frischer Kurkuma verleiht unseren Gerichten nicht nur die charakteristische goldene Farbe, sondern auch gesundheitsfördernde Eigenschaften.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="specialties-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 id="ctaTitle">Bereit für eine kulinarische Reise?</h2>
+                <p id="ctaDescription">Reservieren Sie noch heute einen Tisch und lassen Sie sich von unseren authentischen sri-lankischen Spezialitäten verzaubern.</p>
+                <div class="cta-buttons">
+                    <a href="index.html#reservation" class="btn btn-primary" id="ctaReserveBtn">Tisch reservieren</a>
+                    <a href="index.html#contact" class="btn btn-secondary" id="ctaContactBtn">Kontakt aufnehmen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Suriya Kanthi</h3>
+                    <p id="footerDescription">Authentische Sri Lankan Küche im Herzen von Berlin. Erleben Sie die reichen Aromen und traditionellen Kochmethoden, die über Generationen weitergegeben wurden.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 id="quickLinksTitle">Schnelle Links</h4>
+                    <ul>
+                        <li><a href="index.html#menu">Speisekarte</a></li>
+                        <li><a href="index.html#offers">Angebote</a></li>
+                        <li><a href="index.html#reservation">Reservierung</a></li>
+                        <li><a href="index.html#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <p><i class="fas fa-phone"></i> +49 30 4425301</p>
+                    <p><i class="fas fa-envelope"></i> info@suriya-kanthi.de</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Knaackstr. 4, 10405 Berlin</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 id="footerHoursTitle">Öffnungszeiten</h4>
+                    <p id="footerMonday">Montag: Geschlossen</p>
+                    <p id="footerTueSat">Dienstag - Samstag: 18:00 - 24:00</p>
+                    <p id="footerSunday">Sonntag: 11:00 - 24:00</p>
+                    <p><small id="footerKitchen">Küche bis 23:30</small></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 SURIYA KANTHI. <span id="rightsReserved">Alle Rechte vorbehalten.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="specialties.js"></script>
+</body>
+</html> 

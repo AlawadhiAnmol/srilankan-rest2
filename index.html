@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suriya Kanthi - Authentische Sri Lankan Küche in Berlin</title>
+    <meta name="description" content="Erleben Sie die authentischen Aromen Sri Lankas im Herzen von Berlin. Traditionelle Küche, frische Zutaten, unvergessliche Geschmackserlebnisse.">
+    <meta name="keywords" content="Sri Lanka Restaurant Berlin, Curry, Authentisch, Knaackstr, Prenzlauer Berg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MCA1MCI+PGNpcmNsZSBjeD0iMjUiIGN5PSIyNSIgcj0iMjMiIGZpbGw9IiM4QjQ1MTMiLz48dGV4dCB4PSIyNSIgeT0iMzAiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyMCIgZmlsbD0iI0ZGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+U0s8L3RleHQ+PC9zdmc+">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Config -->
+    <script src="config.js"></script>
+</head>
+<body>
+    <!-- Language Toggle (Hidden initially, shown by JS) -->
+    <div class="language-toggle">
+        <button id="langToggle" class="lang-btn">
+            <i class="fas fa-globe"></i>
+            <span id="currentLang">DE</span>
+        </button>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2 id="siteName">Suriya Kanthi</h2>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link" data-section="home">Startseite</a>
+                <a href="#menu" class="nav-link" data-section="menu">Speisekarte</a>
+                <a href="#offers" class="nav-link" data-section="offers">Angebote</a>
+                <a href="#about" class="nav-link" data-section="about">Über uns</a>
+                <a href="specialties.html" class="nav-link" data-section="specialties">Spezialitäten</a>
+                <a href="#contact" class="nav-link" data-section="contact">Kontakt</a>
+                <a href="#reservation" class="nav-link cta-button" data-section="reservation">Reservierung</a>
+            </div>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <div class="hero-content">
+                    <h1 class="hero-title" id="heroTitle">Authentische Sri Lankan Küche</h1>
+                    <p class="hero-subtitle" id="heroSubtitle">Erleben Sie die reichen Aromen und lebendigen Gewürze Sri Lankas im Herzen von Berlin</p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-primary" id="viewMenuBtn">Speisekarte ansehen</a>
+                        <a href="#reservation" class="btn btn-secondary" id="reserveTableBtn">Tisch reservieren</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=1920&h=1080&fit=crop" alt="Sri Lankan curry dishes" loading="lazy">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Down Arrow -->
+        <div class="scroll-arrow">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" id="menuTitle">Unsere Speisekarte</h2>
+                <p class="section-subtitle" id="menuSubtitle">Entdecken Sie die authentischen Aromen Sri Lankas</p>
+            </div>
+
+            <!-- Menu Categories -->
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="starters">
+                    <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&h=300&fit=crop" alt="Starters">
+                    <span>Vorspeisen</span>
+                </button>
+                <button class="category-btn" data-category="mains">
+                    <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=400&h=300&fit=crop" alt="Main Courses">
+                    <span>Hauptgerichte</span>
+                </button>
+                <button class="category-btn" data-category="rice">
+                    <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c?w=400&h=300&fit=crop" alt="Rice & Sides">
+                    <span>Reis & Beilagen</span>
+                </button>
+                <button class="category-btn" data-category="desserts">
+                    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=300&fit=crop" alt="Desserts">
+                    <span>Desserts</span>
+                </button>
+                <button class="category-btn" data-category="drinks">
+                    <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&h=300&fit=crop" alt="Beverages">
+                    <span>Getränke</span>
+                </button>
+            </div>
+
+            <!-- Menu Items Container -->
+            <div class="menu-items" id="menuItems">
+                <!-- Dynamic content loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section id="offers" class="offers-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" id="offersTitle">Besondere Angebote</h2>
+                <p class="section-subtitle" id="offersSubtitle">Verpassen Sie nicht unsere speziellen Pakete und Angebote</p>
+            </div>
+
+            <div class="offers-grid" id="offersGrid">
+                <!-- Dynamic content loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation & Delivery Section -->
+    <section id="reservation" class="reservation-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" id="reservationTitle">Reservierung & Bestellung</h2>
+                <p class="section-subtitle" id="reservationSubtitle">Reservieren Sie Ihren Tisch oder bestellen Sie online</p>
+            </div>
+
+            <div class="reservation-options">
+                <div class="reservation-card">
+                    <div class="card-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 id="onlineReservationTitle">Online Tisch reservieren</h3>
+                    <p id="onlineReservationDesc">Buchen Sie Ihren Tisch bequem online</p>
+                    <a href="#contact" class="btn btn-primary" id="onlineReservationBtn">Jetzt reservieren</a>
+                </div>
+
+                <div class="reservation-card">
+                    <div class="card-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 id="phoneReservationTitle">Telefonisch reservieren</h3>
+                    <p id="phoneReservationDesc">Rufen Sie uns an für eine Reservierung</p>
+                    <a href="tel:+4930442530" class="btn btn-secondary" id="phoneReservationBtn">+49 30 4425301</a>
+                </div>
+
+                <div class="reservation-card">
+                    <div class="card-icon">
+                        <i class="fas fa-motorcycle"></i>
+                    </div>
+                    <h3 id="deliveryTitle">Bei Lieferando bestellen</h3>
+                    <p id="deliveryDesc">Lassen Sie sich unser Essen nach Hause liefern</p>
+                    <a href="https://www.lieferando.de/speisekarte/suriya-kanthi" target="_blank" class="btn btn-accent" id="deliveryBtn">Jetzt bestellen</a>
+                </div>
+            </div>
+
+            <!-- Online Reservation Form -->
+            <div class="reservation-form-container" id="reservationForm">
+                <h3 id="reservationFormTitle">Tisch online reservieren</h3>
+                <form class="reservation-form" id="bookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookingName" id="nameLabel">Name *</label>
+                            <input type="text" id="bookingName" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookingEmail" id="emailLabel">E-Mail *</label>
+                            <input type="email" id="bookingEmail" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookingPhone" id="phoneLabel">Telefon</label>
+                            <input type="tel" id="bookingPhone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="bookingGuests" id="guestsLabel">Anzahl Gäste *</label>
+                            <select id="bookingGuests" name="guests" required>
+                                <option value="">Auswählen</option>
+                                <option value="1">1 Person</option>
+                                <option value="2">2 Personen</option>
+                                <option value="3">3 Personen</option>
+                                <option value="4">4 Personen</option>
+                                <option value="5">5 Personen</option>
+                                <option value="6">6+ Personen</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="bookingDate" id="dateLabel">Datum *</label>
+                            <input type="date" id="bookingDate" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bookingTime" id="timeLabel">Zeit *</label>
+                            <select id="bookingTime" name="time" required>
+                                <option value="">Auswählen</option>
+                                <option value="18:00">18:00</option>
+                                <option value="18:30">18:30</option>
+                                <option value="19:00">19:00</option>
+                                <option value="19:30">19:30</option>
+                                <option value="20:00">20:00</option>
+                                <option value="20:30">20:30</option>
+                                <option value="21:00">21:00</option>
+                                <option value="21:30">21:30</option>
+                                <option value="22:00">22:00</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="bookingMessage" id="messageLabel">Besondere Wünsche</label>
+                        <textarea id="bookingMessage" name="message" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full" id="submitReservation">Reservierung senden</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" id="locationTitle">Besuchen Sie uns</h2>
+                <p class="section-subtitle" id="locationSubtitle">Finden Sie uns im Herzen von Prenzlauer Berg</p>
+            </div>
+
+            <div class="location-content">
+                <div class="location-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4 id="addressTitle">Adresse</h4>
+                            <p id="addressText">Knaackstr. 4<br>10405 Berlin</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4 id="hoursTitle">Öffnungszeiten</h4>
+                            <div id="openingHours">
+                                <!-- Dynamic content loaded by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4 id="phoneTitle">Telefon</h4>
+                            <a href="tel:+4930442530" id="phoneNumber">+49 30 4425301</a>
+                        </div>
+                    </div>
+
+                    <a href="https://maps.google.com/maps?q=Knaackstr.+4,+10405+Berlin,+Deutschland" target="_blank" class="btn btn-primary" id="directionsBtn">
+                        <i class="fas fa-directions"></i>
+                        Route berechnen
+                    </a>
+                </div>
+
+                <div class="location-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2427.5!2d13.4!3d52.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDMwJzAwLjAiTiAxM8KwMjQnMDAuMCJF!5e0!3m2!1sde!2sde!4v1"
+                        width="100%" 
+                        height="350" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" id="aboutTitle">Über uns</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 id="ourStoryTitle">Unsere Geschichte</h3>
+                    <p id="ourStoryText">Seit 2010 bringen wir die authentischen Aromen Sri Lankas nach Berlin. Unsere Küche vereint traditionelle Rezepte mit frischen, lokalen Zutaten. Jedes Gericht wird mit Liebe und Respekt für unsere Herkunft zubereitet.</p>
+                    
+                    <h3 id="ourMissionTitle">Unsere Mission</h3>
+                    <p id="ourMissionText">Unser Ziel ist es, Ihnen ein unvergessliches kulinarisches Erlebnis zu bieten und Sie auf eine Geschmacksreise durch Sri Lanka mitzunehmen.</p>
+                    
+                    <a href="specialties.html" class="btn btn-primary" id="specialtiesBtn">Unsere Spezialitäten entdecken</a>
+                </div>
+                
+                <div class="about-images">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop" alt="Restaurant interior" loading="lazy">
+                    </div>
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=800&h=600&fit=crop" alt="Chef preparing food" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" id="contactTitle">Kontakt</h2>
+                <p class="section-subtitle" id="contactSubtitle">Nehmen Sie Kontakt mit uns auf</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 id="contactInfoTitle">Kontaktinformationen</h3>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefon</h4>
+                            <a href="tel:+4930442530">+49 30 4425301</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>E-Mail</h4>
+                            <a href="mailto:info@suriya-kanthi.de">info@suriya-kanthi.de</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>Knaackstr. 4<br>10405 Berlin</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://facebook.com/suriyakanthi" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://instagram.com/suriyakanthi" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <h3 id="contactFormTitle">Nachricht senden</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName" id="contactNameLabel">Name *</label>
+                            <input type="text" id="contactName" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactEmail" id="contactEmailLabel">E-Mail *</label>
+                            <input type="email" id="contactEmail" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactMessage" id="contactMessageLabel">Nachricht *</label>
+                            <textarea id="contactMessage" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full" id="submitContact">Nachricht senden</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Suriya Kanthi</h3>
+                    <p id="footerDescription">Authentische Sri Lankan Küche im Herzen von Berlin. Erleben Sie die reichen Aromen und traditionellen Kochmethoden, die über Generationen weitergegeben wurden.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 id="quickLinksTitle">Schnelle Links</h4>
+                    <ul>
+                        <li><a href="#menu" data-section="menu">Speisekarte</a></li>
+                        <li><a href="#offers" data-section="offers">Angebote</a></li>
+                        <li><a href="#reservation" data-section="reservation">Reservierung</a></li>
+                        <li><a href="#contact" data-section="contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <p><i class="fas fa-phone"></i> +49 30 4425301</p>
+                    <p><i class="fas fa-envelope"></i> info@suriya-kanthi.de</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Knaackstr. 4, 10405 Berlin</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 id="footerHoursTitle">Öffnungszeiten</h4>
+                    <p id="footerMonday">Montag: Geschlossen</p>
+                    <p id="footerTueSat">Dienstag - Samstag: 18:00 - 24:00</p>
+                    <p id="footerSunday">Sonntag: 11:00 - 24:00</p>
+                    <p><small id="footerKitchen">Küche bis 23:30</small></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 SURIYA KANTHI. <span id="rightsReserved">Alle Rechte vorbehalten.</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html> 
